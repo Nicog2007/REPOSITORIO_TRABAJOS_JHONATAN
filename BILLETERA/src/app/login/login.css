@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4e6ff;
+  display: flex;
+  justify-content: flex-end; /* al lado derecho */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  background-image: url("https://blog.caixabank.es/wp-content/uploads/sites/4/2024/07/que-es-un-banco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.login-box {
+  background: #ffffffad; /* azul claro */
+  padding: 40px; /* más espacio interno */
+  border-radius: 15px;
+  width: 400px; /* más grande */
+  text-align: center;
+  border: 3px solid #5961aa; /* borde azul */
+  margin-right: 60px; /* espacio desde el borde derecho */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* sombra elegante */
+}
+
+h2 {
+  color: #000; /* negro */
+  margin-bottom: 25px;
+  font-size: 28px; /* más grande */
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #000; /* negro */
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px; /* más grande */
+  margin-bottom: 20px;
+  border: 1px solid #2b2a2a;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 14px; /* más grande */
+  background: #5961aa; /* azul fuerte */
+  color: #fff;
+  font-size: 18px; /* letra más grande */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5961aa; /* más oscuro al pasar el mouse */
+}

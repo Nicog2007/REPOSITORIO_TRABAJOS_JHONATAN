@@ -1,0 +1,76 @@
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav{
+  background-color: #7240e7; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.logo h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search-bar input {
+  min-width: 250px;
+}
+
+.menu-icons img {
+  transition: transform 0.3s ease;
+}
+
+.menu-icons img:hover {
+  transform: scale(1.1);
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: aquamarine;
+}
+
+.boton button {
+  background-color: #4714c0;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+:host {
+  display: block;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  background-color: #000; /* fondo negro */
+  color: #fff; /* texto blanco */
+  padding: 20px;
+}
+
+.nav {
+  background: #000; /* fondo negro */
+  padding: 10px;
+  text-align: center;
+}
+
+.nav .navbar-brand {
+  margin: 0 auto; /* centra el contenido */
+  color: white;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto; /* centra horizontalmente */
+  max-width: 90%; /* para que no se estire demasiado */
+  height: auto;
+}
+
+
+
+

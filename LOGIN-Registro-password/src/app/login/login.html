@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login con Verificación</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuario">
+    <button onclick="login()">Ingresar</button>
+
+    <!-- Mensajes -->
+    <p id="error" class="error">❌ Usuario o contraseña incorrectos</p>
+    <p id="success" class="success">✅ Bienvenido</p>
+  </div>
+
+  <script>
+    function login() {
+      const usuario = document.getElementById("usuario").value.trim();
+      const pass = document.getElementById("password").value.trim();
+
+      const errorMsg = document.getElementById("error");
+      const successMsg = document.getElementById("success");
+
+      // Validación: usuario "admin" y contraseña "1234"
+      if (usuario === "admin" && pass === "1234") {
+        errorMsg.style.display = "none";
+        successMsg.style.display = "block";
+        successMsg.textContent = "✅ Bienvenido " + usuario;
+
+        // Redirigir en 2 segundos
+        setTimeout(() => {
+          window.location.href = "panel.html";
+        }, 2000);
+
+      } else {
+        successMsg.style.display = "none";
+        errorMsg.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>

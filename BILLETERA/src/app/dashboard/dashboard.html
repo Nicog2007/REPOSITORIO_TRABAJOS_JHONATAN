@@ -1,0 +1,35 @@
+<body>
+  
+<div class="container mt-4 text-center">
+  <h1 class="mb-4">CUENTA DE AHORROS</h1>
+
+  <!-- BOTONES -->
+  <div class="mb-3">
+    <button class="btn btn-outline-success me-2" (click)="mostrarSeccion('ingresos')">Ingresos</button>
+    <button class="btn btn-outline-success me-2" (click)="mostrarSeccion('gastos')">Gastos</button>
+    <button class="btn btn-outline-success me-2" (click)="mostrarSeccion('balance')">Balance</button>
+  </div>
+
+  <!-- SECCION INGRESOS -->
+  <div *ngIf="seccionActiva === 'ingresos'" class="card p-3 shadow">
+    <label for="numero1">Ingresos:</label>
+    <input type="number" class="form-control" [(ngModel)]="numero1" (input)="sumar()">
+    <p class="mt-2">Total de ingresos: <strong>{{ numero1 }}</strong></p>
+  </div>
+
+  <!-- SECCION GASTOS -->
+  <div *ngIf="seccionActiva === 'gastos'" class="card p-3 shadow">
+    <label for="numero2">Gastos:</label>
+    <input type="number" class="form-control" [(ngModel)]="numero2" (input)="sumar()">
+    <p class="mt-2">Total de gastos: <strong>{{ numero2 }}</strong></p>
+  </div>
+
+  <!-- SECCION BALANCE -->
+  <div *ngIf="seccionActiva === 'balance'" class="card p-3 shadow">
+    <h4>Balance</h4>
+    <p class="fs-4" [ngClass]="{'text-success': resultado >= 0, 'text-danger': resultado < 0}">
+      {{ resultado }}
+    </p>
+  </div>
+</div>
+</body>

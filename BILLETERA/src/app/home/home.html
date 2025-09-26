@@ -1,0 +1,52 @@
+<body>
+  
+
+<div class="contenedor-historial">
+  <h2 class="titulo">Historial de Cuenta</h2>
+
+  <!-- Movimiento 1 -->
+  <div class="card-movimiento">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span class="tipo"> Giro</span>
+      <span class="fecha">15 Sept 2025</span>
+    </div>
+    <div class="card-body">
+      <p><strong>Monto:</strong> $500.000</p>
+      <p><strong>Destino:</strong> Bogotá</p>
+      <p class="estado exito">Completado</p>
+    </div>
+  </div>
+
+  <!-- Movimiento 2 -->
+  <div class="card-movimiento">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span class="tipo">Recarga</span>
+      <span class="fecha">10 Sept 2025</span>
+    </div>
+    <div class="card-body">
+      <p><strong>Monto:</strong> $50.000</p>
+      <p><strong>Método:</strong> Nequi</p>
+      <p class="estado pendiente">Pendiente</p>
+    </div>
+  </div>
+
+  <!-- Movimiento 3 -->
+  <div class="card-movimiento">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span class="tipo">Pago</span>
+      <span class="fecha">01 Sept 2025</span>
+    </div>
+    <div class="card-body">
+      <p><strong>Monto:</strong> $200.000</p>
+      <p><strong>Comercio:</strong> Tienda Éxito</p>
+      <p class="estado error">Fallido</p>
+    </div>
+  </div>
+
+  <!-- Botón Continuar -->
+  <div class="text-center mt-4">
+    <button class="btn-continuar" (click)="continuar()">Continuar</button>
+  </div>
+</div>
+
+</body>

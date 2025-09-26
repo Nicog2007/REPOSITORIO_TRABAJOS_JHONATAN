@@ -1,0 +1,28 @@
+<div class="ficha-container">
+  <h2>Perfil de Motera</h2>
+
+  <div class="header">
+    <div>
+      <h2>Diana Gómez</h2>
+    </div>
+    <img [src]="persona.foto" alt="Foto User Persona" class="foto">
+  </div>
+
+  <div class="section">
+    <h4>Datos del Perfil</h4>
+    <ul>
+      <li><b>Edad:</b> {{ persona.demograficos.edad }}</li>
+      <li><b>Estado civil:</b> Soltera</li>
+      <li><b>Localización:</b> Manizales, Colombia</li>
+      <li><b>Educación:</b> {{ persona.demograficos.educacion }}</li>
+        <li><b>Comportamiento en la web:</b> {{ persona.comportamentales.comportamientoWeb }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Biografía</h4>
+    <p>Soy Laura, una diseñadora apasionada por mejorar la experiencia de los usuarios. Creo que un buen diseño puede cambiar vidas. Mis valores son la empatía, la creatividad y el trabajo en equipo.</p>
+  </div>
+</div>
+
+

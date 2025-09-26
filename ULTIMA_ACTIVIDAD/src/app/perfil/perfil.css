@@ -1,0 +1,63 @@
+:host {
+  display: block;
+  min-height: 100vh; /* ocupa toda la altura */
+  background: url("https://i.pinimg.com/736x/c0/87/09/c08709c47542f2985b023f989a8fcf3d.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 40px 0; /* deja espacio arriba y abajo */
+}
+
+
+.ficha-container {
+  max-width: 700px;
+  margin: 40px auto; /* centrado horizontal y espacio vertical */
+  padding: 25px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center; /* centra por defecto el contenido */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;   /* nombre arriba, foto abajo */
+  justify-content: center;
+  align-items: center;      /* todo al centro */
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #222;
+}
+
+.foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;       /* circular */
+  object-fit: cover;
+  border: 3px solid #666;
+}
+
+.section {
+  margin-bottom: 20px;
+  text-align: center;       /* todo centrado */
+}
+
+.section h4 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
